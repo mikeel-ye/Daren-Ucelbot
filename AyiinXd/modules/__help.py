@@ -33,7 +33,7 @@ async def helpyins(event):
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await eor(event, f"{CMD_HELP[args]}\n\n© AyiinChats")
+            await eor(event, f"{CMD_HELP[args]}\n\n© Darensupport")
         else:
             await eod(
                 event,
@@ -47,7 +47,7 @@ async def helpyins(event):
             try:
                 results = await event.client.inline_query(
                     BOT_USERNAME,
-                    "@AyiinChats"
+                    "@Dalenucelbot"
                 )
                 await results[0].click(
                     event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
