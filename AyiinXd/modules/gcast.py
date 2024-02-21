@@ -35,8 +35,8 @@ async def gcast(event):
         reply = await event.get_reply_message()
         msg = reply.text
     else:
-        return await eod(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await eor(event, "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Saya...`")
+        return await eod(event, "**Mana Pesan nya ngentod Jangan goblok apa**")
+    kk = await eor(event, "`Sedang Mengirim Mohon Sabar Tod... Kalo Limit Jangan Salahin Daren Ya Kontol...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -105,13 +105,13 @@ async def sudo(event):
 📚 **Blacklist Group:**
 {text}
 
-Ketik `{cmd}addblacklist` di grup yang ingin anda tambahkan ke daftar blacklist gcast."""
+Ketik `{cmd}addbl` di grup yang ingin anda tambahkan ke daftar blacklist gcast."""
         )
     else:
         await eod(event, "**🔮 Blacklist GCAST:** `Disabled`")
 
 
-@ayiin_cmd(pattern="addblacklist(?:\\s|$)([\\s\\S]*)")
+@ayiin_cmd(pattern="addbl(?:\\s|$)([\\s\\S]*)")
 async def add(event):
     me = await event.client.get_me()
     BLACKLIST_GCAST = AyiinChanger(cek_gcast(me.id))
@@ -129,7 +129,7 @@ async def add(event):
         )
 
 
-@ayiin_cmd(pattern="delblacklist(?:\\s|$)([\\s\\S]*)")
+@ayiin_cmd(pattern="delbl(?:\\s|$)([\\s\\S]*)")
 async def _(event):
     xxx = await eor(event, '**Memproses...**')
     me = await event.client.get_me()
