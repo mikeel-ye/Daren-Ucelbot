@@ -1,9 +1,9 @@
 {
-  "name": "⋆ 𝘼𝙮𝙞𝙞𝙣-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 ⋆",
-  "description": "[Ayiin-Userbot] Userbot Hanya Untuk Bersenang - Senang",
-  "logo": "https://telegra.ph/file/c6a0aef41355af5a018c6.jpg",
-  "keywords": ["telegram", "userbot", "Ayiin-Userbot", "modular", "python"],
-  "repository": "https://github.com/AyiinXd/Ayiin-Userbot",
+  "name": "⋆ 𝘿𝘼𝙍𝙀𝙉-𝙐𝘾𝙀𝙇𝘽𝙊𝙏 ⋆",
+  "description": "[Daren-Ucelbot] Userbot Hanya Untuk Bersenang - Senang",
+  "logo": "https://telegra.ph//file/b097e269357807129a2d1.jpg",
+  "keywords": ["telegram", "userbot", "Daren-Ucelbot", "modular", "python"],
+  "repository": "https://github.com/mikeel-ye/Daren-Ucelnot",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -31,7 +31,7 @@
       "required": false
     }
   },
-  "addons": [
+    "addons": [
     {
     "plan": "heroku-postgresql",
       "options": {
@@ -50,7 +50,7 @@
   "formation": {
     "ayiin": {
       "quantity": 1,
-      "size": "eco"
+      "size": "basic"
     }
   }
 }
