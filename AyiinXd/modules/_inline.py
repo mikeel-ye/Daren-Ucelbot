@@ -24,9 +24,9 @@ main_help_button = [
 ]
 logoyins = random.choice(
     [
-        "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg",
-        "https://telegra.ph/file/c935d34b48e45fba22b03.jpg",
-        "https://telegra.ph/file/392f69c8717c91b1e8a3b.jpg",
+        "https://telegra.ph//file/e61904d28f971624f8d13.jpg",
+        "https://telegra.ph//file/64e03b5c4496617d58ffd.jpg",
+        "https://telegra.ph//file/865c18de386c6d84609e6.jpg",
         "https://telegra.ph/file/4c5b756dd13d7a88c866b.jpg",
     ]
 )
@@ -46,28 +46,28 @@ async def inline_handler(event):
         result = await event.builder.photo(
             file=logoyins,
             link_preview=False,
-            text=f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(CMD_HELP)} **Modules**",
+            text=f"**✨ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(CMD_HELP)} **Modules**",
             buttons=main_help_button,
         )
     elif query.startswith("repo"):
         result = builder.article(
             title="Repository",
-            description="Repository Ayiin - Userbot",
-            url="https://t.me/AyiinChats",
+            description="Repository Daren-Ucelbot",
+            url="https://t.me/darensupport",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
                 0,
                 "image/jpeg",
                 []),
-            text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/AyiinXd)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinChats\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+            text="**Daren-Ucelbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [Dareen](https://t.me/Darenrorr)\n✧ **sᴜᴘᴘᴏʀᴛ :** @Darensuppprt\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Daren-Ucelbot](https://github.com/mikeel-ye/Daren-Ucelbot)\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/AyiinChats"),
+                        "https://t.me/Darensupport"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/AyiinXd/Ayiin-Userbot"),
+                        "https://github.com/mikeel-ye/Daren-Ucelbot"),
                 ],
             ],
             link_preview=False,
@@ -106,23 +106,23 @@ async def inline_handler(event):
         )
     else:
         result = builder.article(
-            title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
-            description="Ayiin - Userbot | Telethon",
-            url="https://t.me/AyiinChannel",
+            title="✨ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✨",
+            description="Daren-Ucelbot | Telethon",
+            url="https://t.me/Darensupport",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
                 0,
                 "image/jpeg",
                 []),
-            text=f"**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {var.BOT_USERNAME}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinChannel\n➖➖➖➖➖➖➖➖➖➖",
+            text=f"**Daren-Ucelbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {var.BOT_USERNAME}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @skandallgua\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/AyiinChats"),
+                        "https://t.me/darensupport"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/AyiinXd/Ayiin-Userbot"),
+                        "https://github.com/mikeel-ye/Daren-Ucelbot"),
                 ],
             ],
             link_preview=False,
