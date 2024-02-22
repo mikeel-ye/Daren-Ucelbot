@@ -16,6 +16,7 @@ DEVS = [
     883761960, # Ari
     2130526178, # Alfa
     1663258664, # Kyy
+    6953052196, #Daren
 ]
 
 
@@ -53,6 +54,7 @@ GCAST_BLACKLIST = [
     -1001572486389,  # PluviaMusicGroup
     -1001608701614,  # UputtSupport
     -1001812143750,  # Kynan Support
+    -1002109872719,  # Daren-Support
 ]
 
 
