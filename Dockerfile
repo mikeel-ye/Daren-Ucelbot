@@ -5,13 +5,13 @@
 
 FROM ayiinxd/ayiin:xd
 
-RUN git clone -b Ayiin-userbot https://github.com/mikeel-ye/Daren-Ucelbot/home/ayiinuserbot/ \
-    && chmod 777 /home/ayiinuserbot\
-    && mkdir /home/ayiinuserbot/bin/
+RUN git clone -b Daren-Ucelbot https://github.com/mikeel-ye/Daren-Ucelbot/home/darenucelbot/ \
+    && chmod 777 /home/darenucelbot\
+    && mkdir /home/darenucelbot/bin/
 
 #COPY ./sample.env ./.env* /home/darenucelbot/
 
-WORKDIR /home/ayiinuserbot/
+WORKDIR /home/darenucelbot/
 
 RUN pip install -r requirements.txt
 
