@@ -63,7 +63,7 @@ async def _(ping):
     sleep(3)
     await Ayiin.edit(
         f"""
-**✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+**✧ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✧**
 
 ✧ **ᴘɪɴɢ :** `{duration}ms`
 ✧ **ᴜᴘᴛɪᴍᴇ :** `{uptime}`
