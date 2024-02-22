@@ -5,7 +5,7 @@
 
 FROM ayiinxd/ayiin:xd
 
-RUN git clone -b Daren-Ucelbot https://github.com/mikeel-ye/Daren-Ucelbot/home/darenucelbot/ \
+RUN git clone -b Ayiin-userbot https://github.com/mikeel-ye/Daren-Ucelbot/home/darenucelbot/ \
     && chmod 777 /home/darenucelbot\
     && mkdir /home/darenucelbot/bin/
 
