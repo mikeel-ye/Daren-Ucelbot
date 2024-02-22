@@ -33,7 +33,7 @@ absen = [
     "**𝙎𝙞 𝘾𝙖𝙠𝙚𝙥 𝙃𝙖𝙙𝙞𝙧 𝘽𝙖𝙣𝙜** 😎",
 ]
 
-ayiincakep = [
+darencakep = [
     "**𝙄𝙮𝙖 𝙂𝙖𝙣𝙩𝙚𝙣𝙜 𝘽𝙖𝙣𝙜𝙚𝙩** 😍",
     "**𝙂𝙖𝙣𝙩𝙚𝙣𝙜𝙣𝙮𝙖 𝙂𝙖𝙠 𝘼𝙙𝙖 𝙇𝙖𝙬𝙖𝙣** 😚",
     "**𝙠𝙖𝙢𝙪 𝙂𝙖𝙣𝙩𝙚𝙣𝙜𝙣𝙮𝙖 𝘼𝙠𝙪 𝙆𝙖𝙣** 😍",
@@ -49,7 +49,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
-    message = "**✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**\n\n✧ **ᴘɪɴɢᴇʀ :** `{} ms`\n✧ **ᴜᴘᴛɪᴍᴇ :** `{}`\n✧ **ᴏᴡɴᴇʀ :** `{}`\n✧ **ɪᴅ :** `{}`"
+    message = "**✧ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✧**\n\n✧ **ᴘɪɴɢᴇʀ :** `{} ms`\n✧ **ᴜᴘᴛɪᴍᴇ :** `{}`\n✧ **ᴏᴡɴᴇʀ :** `{}`\n✧ **ɪᴅ :** `{}`"
     await ping.reply(
         message.format(
             duration,
@@ -73,7 +73,7 @@ async def ayiinabsen(ganteng):
 
 @register(incoming=True, from_users=DEVS, pattern=r"^Aku ganteng kan$")
 async def ayiin(ganteng):
-    await ganteng.reply(choice(ayiincakep))
+    await ganteng.reply(choice(darencakep))
 
 
 # ========================×========================
@@ -84,7 +84,7 @@ async def ayiin(ganteng):
 CMD_HELP.update(
     {
         "yinsping": f"**Plugin:** `yinsping`\
-        \n\n  »  **Perintah : **`Perintah Ini Hanya Untuk Devs Ayiin-Userbot Tod.`\
+        \n\n  »  **Perintah : **`Perintah Ini Hanya Untuk Devs Daren-Ucelbof Tod.`\
         \n  »  **Kegunaan :** __Silahkan Ketik `{cmd}ping` Untuk Publik.__\
     "
     }
