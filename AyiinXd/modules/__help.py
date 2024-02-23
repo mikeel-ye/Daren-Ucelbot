@@ -26,7 +26,7 @@ from AyiinXd import Ayiin, CMD_HELP, bot, ch
 from AyiinXd.ayiin import ayiin_cmd, eod, eor
 
 
-@ayiin_cmd(pattern="help(?: |$)(.*)")
+@ayiin_cmd(pattern="anu(?: |$)(.*)")
 async def helpyins(event):
     if event.fwd_from:
         return
