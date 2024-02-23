@@ -7,19 +7,19 @@
   "stack": "container",
   "env": {
     "API_KEY": {
-      "description": "Dapatkan API KEY di Grup » https://t.me/AyiinChats » Lalu ketik /get api atau di web my.telegram.org Masukan yg APP ID Telegram",
+      "description": "Dapatkan API KEY di Grup » https://t.me/Darensupport » Lalu ketik /get api atau di web my.telegram.org Masukan yg APP ID Telegram",
       "required": true
     },
     "API_HASH": {
-      "description": "Dapatkan API Hash di Grup » https://t.me/AyiinChats » Lalu ketik /get api atau di web my.telegram.org",
+      "description": "Dapatkan API Hash di Grup » https://t.me/Darensupport » Lalu ketik /get api atau di web my.telegram.org",
       "required": true
     },
     "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » https://t.me/AyiinChats » Lalu ketik /get string",
+      "description": "Dapatkan String Session di Grup » https://t.me/Darensupport » Lalu ketik #string",
       "required": true
     },
     "HEROKU_APP_NAME": {
-      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas jangan buta map)",
       "required": true
     },
     "HEROKU_API_KEY": {
