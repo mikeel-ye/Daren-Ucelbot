@@ -136,7 +136,7 @@ async def autobot():
         await asyncio.sleep(3)
         if isdone.startswith("Sorry,"):
             ran = randint(1, 100)
-            username = f"Ayiin{(str(who.id))[6:]}{str(ran)}bot"
+            username = f"Dareen{(str(who.id))[6:]}{str(ran)}bot"
             await Ayiin.send_message(bf, username)
             await asyncio.sleep(3)
             nowdone = (await Ayiin.get_messages(bf, limit=1))[0].text
