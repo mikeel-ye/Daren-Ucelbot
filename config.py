@@ -100,8 +100,8 @@ class Config(object):
     SUDO_HANDLER = getenv("SUDO_HANDLER", r"$")
 
     # Support
-    GROUP = getenv("GROUP", "AyiinChats")
-    CHANNEL = getenv("CHANNEL", "AyiinChannel")
+    GROUP = getenv("GROUP", "Darensupport")
+    CHANNEL = getenv("CHANNEL", "Skandallgua")
 
     # Heroku Credentials for updater.
     HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -146,7 +146,7 @@ class Config(object):
     # untuk perintah teks costum .alive
     ALIVE_TEKS_CUSTOM = getenv(
         "ALIVE_TEKS_CUSTOM",
-        "Hey, Saya pengguna Ayiin-Userbot")
+        "Hey, Saya pengguna Daren-Ucelbot")
 
     # Default .alive name
     ALIVE_NAME = getenv("ALIVE_NAME", "AyiinXd")
@@ -178,10 +178,10 @@ class Config(object):
 
     # Default .alive logo
     ALIVE_LOGO = (getenv("ALIVE_LOGO")
-                or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg")
+                or "https://telegra.ph//file/b097e269357807129a2d1.jpg")
 
     INLINE_PIC = (getenv("INLINE_PIC")
-                or "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg")
+                or "https://telegra.ph//file/b097e269357807129a2d1.jpg")
 
     # Picture For VCPLUGIN
     PLAY_PIC = (getenv("PLAY_PIC")
