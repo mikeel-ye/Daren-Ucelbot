@@ -53,7 +53,7 @@ async def on_new_message(event):
         return
 
 
-@ayiin_cmd(pattern="addbl(?: |$)(.*)")
+@ayiin_cmd(pattern="bl(?: |$)(.*)")
 async def on_add_black_list(addbl):
     text = addbl.pattern_match.group(1)
     to_blacklist = list(
