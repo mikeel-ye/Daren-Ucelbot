@@ -46,7 +46,7 @@ async def on_plug_in_callback_query_handler(event):
     owner = user.first_name
     if event.query.user_id == uid or event.query.user_id in var.SUDO_USERS:
         buttons = paginate_help(0, dugmeler, "helpme")
-        text = f"**✨ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+        text = f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
         await event.edit(
             text,
             file=logoyins,
@@ -72,28 +72,28 @@ async def inline_handler(event):
         result = await event.builder.photo(
             file=logoyins,
             link_preview=False,
-            text=f"**✨ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+            text=f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
             buttons=main_help_button,
         )
     elif query.startswith("repo"):
         result = builder.article(
             title="Repository",
-            description="Repository Daren-Ucelbot",
-            url="https://t.me/darensupport",
+            description="Repository Ayiin - Userbot",
+            url="https://t.me/AyiinChats",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
                 0,
                 "image/jpeg",
                 []),
-            text="**Daren-Ucelbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [Dareen](https://t.me/Darenrorr)\n✧ **sᴜᴘᴘᴏʀᴛ :** @darensupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Daren-Ucelbot](https://github.com/mikeel-ye/Daren-Ucelbot)\n➖➖➖➖➖➖➖➖➖➖",
+            text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/AyiinXd)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinChats\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/Darensupport"),
+                        "https://t.me/AyiinChats"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/mikeel-ye/Daren-Ucelbot"),
+                        "https://github.com/AyiinXd/Ayiin-Userbot"),
                 ],
             ],
             link_preview=False,
@@ -132,23 +132,23 @@ async def inline_handler(event):
         )
     else:
         result = builder.article(
-            title="✨ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✨",
-            description="Daren - Ucelbot | Telethon",
-            url="https://t.me/skandallgua",
+            title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
+            description="Ayiin - Userbot | Telethon",
+            url="https://t.me/AyiinChannel",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
                 0,
                 "image/jpeg",
                 []),
-            text=f"**Daren-Ucelbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {botusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @skandallgua\n➖➖➖➖➖➖➖➖➖➖",
+            text=f"**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {botusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinChannel\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/darensupport"),
+                        "https://t.me/AyiinChats"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/mikeel-ye/Daren-Ucelbot"),
+                        "https://github.com/AyiinXd/Ayiin-Userbot"),
                 ],
             ],
             link_preview=False,
@@ -206,7 +206,7 @@ async def gback_handler(event):
     if event.query.user_id == uid or event.query.user_id in var.SUDO_USERS:  # @Ayiin-Userbot
         # https://t.me/TelethonChat/115200
         text = (
-            f"**✨ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+            f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
         await event.edit(
             text,
             file=logoyins,
