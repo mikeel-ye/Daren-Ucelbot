@@ -67,7 +67,7 @@ async def inline_handler(event):
     uid = user.id
     botusername = (await event.client.get_me()).username
     if event.query.user_id == uid and query.startswith(
-            "darenucelbot"):
+            "@AyiinChats"):
         buttons = paginate_help(0, dugmeler, "helpme")
         result = await event.builder.photo(
             file=logoyins,
