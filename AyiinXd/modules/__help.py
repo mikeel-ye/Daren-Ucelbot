@@ -26,14 +26,14 @@ from AyiinXd import Ayiin, CMD_HELP, bot, ch
 from AyiinXd.ayiin import ayiin_cmd, eod, eor
 
 
-@ayiin_cmd(pattern="anu(?: |$)(.*)")
+@ayiin_cmd(pattern="help(?: |$)(.*)")
 async def helpyins(event):
     if event.fwd_from:
         return
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await eor(event, f"{CMD_HELP[args]}\n\n© Darensupport")
+            await eor(event, f"{CMD_HELP[args]}\n\n© AyiinChats")
         else:
             await eod(
                 event,
@@ -47,7 +47,7 @@ async def helpyins(event):
             try:
                 results = await event.client.inline_query(
                     BOT_USERNAME,
-                    "@Dalenucelbot"
+                    "@AyiinChats"
                 )
                 await results[0].click(
                     event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
