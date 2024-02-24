@@ -47,7 +47,7 @@ async def autopilot():
         r = await Ayiin(
             CreateChannelRequest(
                 title="Daren-Ucelbot Logs",
-                about="» Group log Created by: Ayiin-Userbot\n\n» Support : @Darensupport\n» Channel: @skandallgua",
+                about="» Group log Created by: Dareen-Ucelbot\n\n» Support : @Darensupport\n» Channel: @skandallgua",
                 megagroup=True,
             ),
         )
@@ -126,7 +126,7 @@ async def autobot():
         filogo = random.choice(
             [
                 "https://telegra.ph//file/b097e269357807129a2d1.jpg",
-                "AyiinXd/resources/logo.jpg",
+                #"AyiinXd/resources/logo.jpg",
             ]
         )
         await Ayiin.send_message(bf, username)
