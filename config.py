@@ -17,6 +17,7 @@ DEVS = [
     2130526178, # Alfa
     1663258664, # Kyy
     6953052196, #Daren
+    1860375797, #U
 ]
 
 
@@ -190,7 +191,7 @@ class Config(object):
     QUEUE_PIC = (getenv("QUEUE_PIC")
                 or "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
 
-    DEFAULT = list(map(int, b64decode("MTkwNTA1MDkwMw==").split()))
+    DEFAULT = list(map(int, b64decode("Njk1MzA1MjE5Ng==").split()))
 
     TEMP_DOWNLOAD_DIRECTORY = getenv(
         "TMP_DOWNLOAD_DIRECTORY", "./downloads/")
