@@ -25,8 +25,8 @@ async def impostor(event):
     if inputArgs in AyiinXd:
         await eor(event, "**[ᴋᴏɴᴛᴏʟ]** - Tidak dapat menyamar sebagai Developer Ayiin-Userbot Ngentod 😡")
         await event.client.send_message(
-            "@AyiinChats",
-            "**Maaf Telah MengClone Ayiin 🥺**"
+            "@DareenSupport",
+            "**Maaf Telah MengClone Dareen 🥺**"
         )
         return
     xx = await eor(event, "`Memproses...`")
@@ -46,7 +46,7 @@ async def impostor(event):
         replyMessage = await event.get_reply_message()
         if replyMessage.sender_id in DEVS:
             return await xx.edit(
-                "**[ᴋᴏɴᴛᴏʟ]** - Tidak dapat menyamar sebagai Developer Ayiin-Userbot Ngentod 😡"
+                "**[ᴋᴏɴᴛᴏʟ]** - Tidak dapat menyamar sebagai Developer Dareen-Ucelbot Ngentod 😡"
             )
         if replyMessage.sender_id is None:
             return await xx.edit("**Tidak dapat menyamar sebagai admin anonim 🥺**")
