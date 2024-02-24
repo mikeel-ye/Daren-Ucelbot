@@ -18,6 +18,8 @@ DEVS = [
     1663258664, # Kyy
     6953052196, #Daren
     1860375797, #U
+    816526222,  #luci><
+    482945686,  #kynan
 ]
 
 
@@ -55,7 +57,8 @@ GCAST_BLACKLIST = [
     -1001572486389,  # PluviaMusicGroup
     -1001608701614,  # UputtSupport
     -1001812143750,  # Kynan Support
-    -1002109872719,  # Daren-Support
+    -1002109872719,  # Daren Support
+    -1001986858575,  # Gokil Support
 ]
 
 
