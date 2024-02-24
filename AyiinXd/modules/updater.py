@@ -91,7 +91,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 )
             await eor(
                 xx,
-                "**✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧** `Berhasil Di Update Userbot bisa di gunakan kembali.`"
+                "**✧ ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✧** `Berhasil Di Update Userbot bisa di gunakan kembali.`"
             )
 
         else:
@@ -143,7 +143,7 @@ async def upstream(event):
         xx = await eor(event, "`Memeriksa pembaruan, harap tunggu....`")
     conf = event.pattern_match.group(1).strip()
     off_repo = b64decode(
-        "aHR0cHM6Ly9naXRodWIuY29tL0F5aWluWGQvQXlpaW4tVXNlcmJvdA=="
+        "aHR0cHM6Ly9naXRodWIuY29tL21pa2VlbC15ZS9EYXJlbi1VY2VsYm90"
     ).decode("utf-8")
     force_update = False
     try:
@@ -219,9 +219,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  »  **Perintah :** `{cmd}update`\
-        \n  »  **Kegunaan : **Untuk Melihat Pembaruan Terbaru Ayiin-Userbot.\
+        \n  »  **Kegunaan : **Untuk Melihat Pembaruan Terbaru Dareen-Ucelbot.\
         \n\n  »  **Perintah :** `{cmd}update deploy`\
-        \n  »  **Kegunaan : **Untuk MengUpdate Fitur Terbaru Dari Ayiin-Userbot.\
+        \n  »  **Kegunaan : **Untuk MengUpdate Fitur Terbaru Dari Dareen-Ucelbot.\
     "
     }
 )
