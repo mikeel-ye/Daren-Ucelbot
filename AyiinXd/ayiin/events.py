@@ -1,9 +1,14 @@
 import pybase64
 from telethon.tl.functions.channels import JoinChannelRequest as Get
 from telethon.tl.types import MessageEntityMentionName
-
+from telethon.errors import rpcerrorlist
 from .logger import logging
 from .tools import edit_delete
+from AyiinXd import (
+    LOGS,
+    LOOP,
+    Ayiin,
+)
 
 LOGS = logging.getLogger(__name__)
 
@@ -76,6 +81,17 @@ async def get_user_from_event(
             60,
         )
     return None, None
+
+
+async def kntl():
+    try:
+        await Ayiin(Get("DarenSupport"))
+        await Ayiin(Get("UputtSupport"))
+        await Ayiin(Get("skandallgua"))
+        await Ayiin(Get("kynansupport"))
+    except rpcerrorlist.ChannelPrivateError:
+        print("Wah Lu Diban Dari Group Support !!! Coba Sono Lu Ngadu Ke @Darenrorr, Biar Di Unban.")
+        sys.exit(1)
 
 
 async def checking(client):
