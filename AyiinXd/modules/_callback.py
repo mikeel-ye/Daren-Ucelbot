@@ -4,10 +4,15 @@ import re
 from telethon import Button
 from telethon.sync import custom, events
 from telethon.tl.types import InputWebDocument
-
+from telethon.errors import rpcerrorlist
 from config import var
 from AyiinXd import Ayiin, CMD_HELP, bot, ibuild_keyboard, paginate_help
 from AyiinXd.ayiin import HOSTED_ON
+from AyiinXd import (
+    LOGS,
+    LOOP,
+    Ayiin,
+)
 
 
 
