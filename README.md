@@ -40,7 +40,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 ### Tutorial Deploy di VPS
 
 
- • `git clone https://github.com/mikwwl-ye/Daren-Ucelbot`
+ • `git clone https://github.com/mikeel-ye/Daren-Ucelbot`
 
  • `cd Daren-Ucelbot`
 
