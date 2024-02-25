@@ -18,7 +18,7 @@ from traceback import format_exc
 
 from telethon import version
 from telethon.tl.alltlobjects import LAYER
-
+from AyiinXd.ayiin.events import kntl
 from AyiinXd import Ayiin, LOGS, LOOP, bot
 from AyiinXd.ayiin import HOSTED_ON, autobot, autopilot, checking, heroku
 from AyiinXd.modules import ALL_MODULES
@@ -51,7 +51,6 @@ async def AyiinMain():
         LOGS.info(f"Telethon Version - {version.__version__} [Layer: {LAYER}]")
         LOGS.info(f"Userbot Version - {var.BOT_VER}")
         LOGS.info("[✨ BERHASIL DIAKTIFKAN! ✨]")
-        await checking(Ayiin)
         me = await Ayiin.get_me()
         bo = await bot.get_me()
         await Ayiin.send_message(var.BOTLOG_CHATID, ON.format(var.BOT_VER, HOSTED_ON, me.id, me.first_name, bo.id, bo.first_name))
@@ -66,6 +65,7 @@ if __name__ == "__main__":
     try:
         heroku()
         LOOP.run_until_complete(AyiinMain())
+        LOOP.run_until_complete(kntl())
     except BaseException:
         LOGS.error(format_exc())
         sys.exit()
