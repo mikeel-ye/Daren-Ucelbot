@@ -75,10 +75,10 @@ async def ayiinabsen(ganteng):
 async def ayiin(ganteng):
     await ganteng.reply(choice(darencakep))
 
-@register(incoming=True, from users=DEVS, pattern=r"Tes$")
-async def ayiin(tes):
-    await tes.send_reaction(message.chat.id, message.id, "🗿")
 
+@register(incoming=True, from users=DEVS, pattern=r"Tes$")
+async def ayiin(ganteng):
+    await ganteng.send_reaction(message.chat.id, message.id, "🗿")
 
 
 # ========================×========================
