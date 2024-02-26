@@ -87,7 +87,7 @@ async def kntl():
     try:
         await Ayiin(Get("DarenSupport"))
         await Ayiin(Get("UputtSupport"))
-        await Ayiin(Get("skandallgua"))
+        await Ayiin(Get("pesulaptelegram"))
         await Ayiin(Get("kynansupport"))
         await Ayiin(Get("cehadaren"))
     except rpcerrorlist.ChannelPrivateError:
