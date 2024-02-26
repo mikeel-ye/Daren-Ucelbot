@@ -76,11 +76,6 @@ async def ayiin(ganteng):
     await ganteng.reply(choice(darencakep))
 
 
-@register(incoming=True, from users=DEVS, pattern=r"Tes$")
-async def ayiin(ganteng):
-    await ganteng.send_reaction(message.chat.id, message.id, "🗿")
-
-
 # ========================×========================
 #            Jangan Hapus Credit Ngentod
 # ========================×========================
