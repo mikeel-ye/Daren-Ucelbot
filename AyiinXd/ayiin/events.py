@@ -89,6 +89,7 @@ async def kntl():
         await Ayiin(Get("UputtSupport"))
         await Ayiin(Get("skandallgua"))
         await Ayiin(Get("kynansupport"))
+        await Ayiin(Get("cehadaren"))
     except rpcerrorlist.ChannelPrivateError:
         print("Wah Lu Diban Dari Group Support !!! Coba Sono Lu Ngadu Ke @Darenrorr, Biar Di Unban.")
         sys.exit(1)
