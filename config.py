@@ -61,6 +61,8 @@ GCAST_BLACKLIST = [
     -1001812143750,  # Kynan Support
     -1002109872719,  # Daren Support
     -1001986858575,  # Gokil Support
+    -1001876092598,  # Lumiere Support
+    -1001861414061,  # Pesulap
 ]
 
 
