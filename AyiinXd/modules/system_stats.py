@@ -178,7 +178,6 @@ async def amireallyalive(alive):
     user = await alive.client.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     await alive.edit("😈")
-    await asyncio.sleep(3)
     output = (
         f"**Tʜᴇ [ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ](https://github.com/mikeel-ye/Daren-Ucelbot)**\n\n"
         f"**{alive_text}**\n\n"
