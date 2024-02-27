@@ -178,19 +178,15 @@ async def amireallyalive(alive):
     user = await alive.client.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     await alive.edit("😈")
+    #await asyncio.sleep(3)
     output = (
-        f"**Tʜᴇ [ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ](https://github.com/mikeel-ye/Daren-Ucelbot)**\n\n"
         f"**{alive_text}**\n\n"
         f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
-        f"{emoji} **Dᴀʀᴇɴ Vᴇʀsɪᴏɴ :** `{var.BOT_VER}`\n"
-        f"{emoji} **Bᴏᴛ Uᴘᴛɪᴍᴇ :** `{uptime}`\n"
-        f"{emoji} **Dᴇᴘʟᴏʏ Oɴ :** {HOSTED_ON}\n"
-        f"{emoji} **Mᴏᴅᴜʟᴇs :** `{len(modules)} Modules` \n"
-        f"{emoji} **Oᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id}) \n"
-        f"{emoji} **Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{python_version()}` \n"
-        f"{emoji} **PʏTɢCᴀʟʟs Vᴇʀsɪᴏɴ :** `Unlimited` \n"
-        f"{emoji} **Pʏ-Dᴀʀᴇɴ Vᴇʀsɪᴏɴ :** `0.4.6`\n"
-        f"{emoji} **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{version.__version__}` \n"
+        f"**Bᴏᴛ Uᴘᴛɪᴍᴇ :** `{uptime}`\n"
+        f"**Dᴇᴘʟᴏʏ Oɴ :** {HOSTED_ON}\n"
+        f"**Mᴏᴅᴜʟᴇs :** `{len(modules)} Modules` \n"
+        f"**Oᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id}) \n"
+        f"**Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{version.__version__}` \n"
         "╰✠╼━━━━━━━━━━━━━━━✠╯\n\n"
     )
     if var.ALIVE_LOGO:
@@ -205,7 +201,6 @@ async def amireallyalive(alive):
             return
     else:
         await edit_or_reply(alive, output)
-
 
 CMD_HELP.update(
     {
