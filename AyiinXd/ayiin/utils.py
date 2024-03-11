@@ -47,7 +47,7 @@ async def autopilot():
         r = await Ayiin(
             CreateChannelRequest(
                 title="Daren-Ucelbot Logs",
-                about="» Group log Created by: Dareen-Ucelbot\n\n» Support : @Darensupport\n» Channel: @skandallgua",
+                about="» Group log Created by: Dareen-Ucelbot\n\n» Support : @Darensupport\n» Channel: @cehadaren",
                 megagroup=True,
             ),
         )
@@ -165,7 +165,7 @@ async def autobot():
                 await Ayiin.send_message(bf, f"@{username}")
                 await asyncio.sleep(1)
                 await Ayiin.send_message(
-                    bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @skandallgua ✨"
+                    bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @cehadaren ✨"
                 )
                 await Ayiin.send_message(
                     var.BOTLOG_CHATID,
@@ -220,7 +220,7 @@ async def autobot():
             await Ayiin.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await Ayiin.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @skandallgua ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @cehadaren ✨"
             )
             await Ayiin.send_message(
                 var.BOTLOG_CHATID,
