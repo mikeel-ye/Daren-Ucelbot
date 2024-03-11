@@ -20,13 +20,13 @@ from . import cmd, var
 async def gen_chlog(repo, diff):
     d_form = "%d - %B - %Y"
     return "".join(
-        f"➣ #{c.count()}: {c.summary} ʙʏ » {c.author} \n    ➥Commited on: {c.committed_datetime.strftime(d_form)}\n\n"
+        f"➣ #{c.count()}: {c.summary} By » {c.author} \n    ➥Commited on: {c.committed_datetime.strftime(d_form)}\n\n"
         for c in repo.iter_commits(diff)
     )
 
 
 async def print_changelogs(xx, ac_br, changelog):
-    changelog_str = f"**✧ Tersedia Pembaruan Untuk [{ac_br}] \n\n✧ Pembaruan:**\n\n{changelog}\n"
+    changelog_str = f"**Tersedia Pembaruan Untuk [Daren-Ucelbot] \n\nPembaruan:**\n\n{changelog}\n"
     if len(changelog_str) > 4096:
         await eor(xx, "**Changelog terlalu besar, dikirim sebagai file.**")
         with open("output.txt", "w+") as file:
@@ -60,7 +60,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             if heroku_app is None:
                 await eor(
                     xx,
-                    f"{txt}\n**Kredensial Heroku tidak valid untuk deploy Ayiin-Userbot dyno.**"
+                    f"{txt}\n**Kredensial Heroku tidak valid untuk deploy Daren-Ucelbot dyno.**"
                 )
                 return repo.__del__()
             del_var("restartstatus")
@@ -91,7 +91,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 )
             await eor(
                 xx,
-                "**✧ ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✧** `Berhasil Di Update Userbot bisa di gunakan kembali.`"
+                "**ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ** `Berhasil Di Update Userbot bisa di gunakan kembali.`"
             )
 
         else:
@@ -117,7 +117,7 @@ async def update(xx, repo, ups_rem, ac_br):
     await install_requirements()
     await eor(
         xx,
-        "**✧ ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✧** `Berhasil Di Update Userbot bisa di gunakan kembali.`"
+        "**ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ** `Berhasil Di Update Userbot bisa di gunakan kembali.`"
     )
 
     del_var("restartstatus")
@@ -186,14 +186,14 @@ async def upstream(event):
         return
 
     if changelog == "" and not force_update:
-        await eod(xx, "**✧ ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✧ Sudah Versi Terbaru**")
+        await eod(xx, "**ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ Sudah Versi Terbaru**")
         return repo.__del__()
 
     if conf == "" and not force_update:
         await print_changelogs(xx, ac_br, changelog)
         await xx.delete()
         return await event.respond(
-            f"**Ketik** `{cmd}update deploy` **Untuk Mengupdate ✧ ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✧**"
+            f"**Ketik** `{cmd}update deploy` **Untuk Mengupdate ᴅᴀʀᴇᴇɴ-ᴜᴄᴇʟʙᴏᴛ**"
         )
 
     if force_update:
