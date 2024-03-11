@@ -15,7 +15,7 @@ async def usit(event):
         f"""
 **Hai {me.first_name} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `{cmd}help` Atau Bisa Minta Bantuan Ke:
 ⍟ **Group Support :** [𝙳𝙰𝚁𝙴𝙴𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃](t.me/Darensupport)
-⍟ **Channel Ayiin :** [𝙲𝙴𝙽𝙶𝙷𝙰 𝙳𝙰𝚁𝙴𝙴𝙽](t.me/skandallgua)
+⍟ **Channel Dareen :** [𝙲𝙴𝙽𝙶𝙷𝙰 𝙳𝙰𝚁𝙴𝙴𝙽](t.me/cehadaren)
 ⍟ **Owner Bot :** [𝙳𝙰𝚁𝙴𝙴𝙽](t.me/Darenrorr)
 ⍟ **Repo :** [𝙳𝙰𝚁𝙴𝙽-𝚄𝙲𝙴𝙻𝙱𝙾𝚃](https://github.com/mikeel-ye/Darwn-Ucelbot)
 """
