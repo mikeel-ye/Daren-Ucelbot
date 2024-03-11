@@ -63,11 +63,11 @@ async def _(ping):
     sleep(3)
     await Ayiin.edit(
         f"""
-**✧ ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ ✧**
+**ᴅᴀʀᴇɴ-ᴜᴄᴇʟʙᴏᴛ**
 
-✧ **ᴘɪɴɢ :** `{duration}ms`
-✧ **ᴜᴘᴛɪᴍᴇ :** `{uptime}`
-✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})
+ **ᴘɪɴɢ :** `{duration}ms`
+ **ᴜᴘᴛɪᴍᴇ :** `{uptime}`
+ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})
 """
     )
 
